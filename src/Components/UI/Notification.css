@@ -1,0 +1,15 @@
+.notificationPending {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgb(181, 218, 108);
+  padding: 10px 30px;
+}
+
+.notificationSuccess {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgb(10, 136, 10);
+  padding: 10px 30px;
+}

@@ -1,0 +1,22 @@
+.order-btn {
+  width: 170px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px 28px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: rgb(37, 226, 201);
+  border-radius: 10px;
+  cursor: pointer;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  transition: 0.3s all ease-in-out;
+}
+
+.order-btn:hover {
+  background-color: rgb(22, 136, 121);
+  transform: scale(1.03);
+  color: white;
+}

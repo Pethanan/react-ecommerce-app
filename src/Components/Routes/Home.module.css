@@ -1,0 +1,22 @@
+.recent-album-section {
+  padding: 40px;
+  font-size: 100px;
+  width: 100%;
+  font-weight: 700;
+  box-sizing: border-box;
+  margin-right: 0px;
+  display: block;
+
+  font-weight: bold;
+  text-align: center;
+  background: #777;
+  background: #777;
+  color: white;
+}
+
+.brand {
+  font-size: 100px;
+}
+.recent-album-bttn {
+  font-size: 35px;
+}

@@ -1,0 +1,71 @@
+.container {
+  margin: 0 auto;
+  margin-bottom: 70px;
+  font-family: "Signika", sans-serif;
+}
+
+.row-section {
+  margin-bottom: 50px;
+}
+
+.brand-title {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #292828;
+  color: white;
+}
+
+.list-title {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  font-size: 38px;
+}
+
+.img-container {
+  align-self: center;
+  overflow: hidden;
+  height: auto;
+  margin: 40px 0;
+}
+
+.item-img {
+  border-radius: 8px;
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.img-container:hover img {
+  height: auto;
+  overflow: hidden;
+  transform: scale(1.1);
+  border-radius: 8px;
+}
+
+.list {
+  text-align: center;
+  padding: 30px;
+  font-size: 40px;
+  margin: 50px;
+  font-weight: bolder;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 100px;
+  margin: 0 auto;
+  padding: 0;
+  margin: 50px;
+}
+
+.item-title {
+  color: rgb(1, 36, 36);
+  text-decoration: none;
+}
+
+.item-title:hover {
+  color: rgb(3, 168, 168);
+  text-decoration: none;
+}
