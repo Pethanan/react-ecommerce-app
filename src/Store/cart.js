@@ -14,6 +14,7 @@ const cartSlice = createSlice({
   reducers: {
     clearCart(state) {
       state = initialCartState;
+      console.log("state changed");
     },
     retrieveData(state, action) {
       state.items = action.payload.items ? action.payload.items : [];

@@ -8,8 +8,6 @@ import Login from "./Components/Routes/Login";
 import { showCartActions } from "./Store/showCart";
 import Notification from "./Components/UI/Notification";
 import { fetchCartData } from "./Store/cart-fetch-action";
-import cart from "./Store/cart";
-import Container from "react-bootstrap/Button";
 import ProductDetails from "../src/Components/Routes/ProductDetails";
 
 const About = lazy(() => import("./Components/Routes/About"));

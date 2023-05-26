@@ -4,9 +4,18 @@ import { Navbar, Nav, Button } from "react-bootstrap";
 import classes from "./NavbarHeader.module.css";
 import AuthCtx from "../../Store/auth-ctx";
 import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { cartActions } from "../../Store/cart";
 
 const NavbarHeader = (props) => {
+  const dispatch = useDispatch();
   const ctx = useContext(AuthCtx);
+
+  const logoutHandler = () => {
+    console.log("logout btn clicked");
+    dispatch(cartActions.clearCart());
+    ctx.logout();
+  };
 
   return (
     <React.Fragment>
@@ -67,7 +76,7 @@ const NavbarHeader = (props) => {
               {ctx.isLoggedIn ? (
                 <Button
                   variant="danger"
-                  onClick={ctx.logout}
+                  onClick={logoutHandler}
                   style={{ margin: "0 50px", fontWeight: "bold" }}
                 >
                   Logout

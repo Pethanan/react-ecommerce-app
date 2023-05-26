@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Redirect } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { cartActions } from "./cart";
+import CartCtx from "./cart-ctx";
 
 const AuthCtx = React.createContext({
   userMail: "",
@@ -53,7 +54,6 @@ export const AuthContextProvider = (props) => {
     setToken(null);
     setMail(null);
     setUserCartEndPoint(null);
-    dispatch(cartActions.clearCart());
     <Redirect to="/loginpage"></Redirect>;
   };
 
